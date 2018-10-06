@@ -1,0 +1,10 @@
+
+
+TO INSTALL RTC LIBRARY
+=======================
+Place the RTClib-1.2.0 folder in .../Arduino/libraries/ 
+
+TO SET RTC TO CURRENT TIME
+===========================
+Upload setRTC program
+
