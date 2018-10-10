@@ -7,13 +7,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Read data from file #
-with open('rtdIce2.CSV', 'rt') as csvfile:
+with open('LOG000.CSV', 'rt') as csvfile:
     reader = csv.reader(csvfile, delimiter=',')
     dataRaw = list(reader)
 headers = dataRaw.pop(0)               # remove headers and save them
-data = np.array(dataRaw, dtype=float)  # convert raw data to array
+data = np.array(dataRaw, dtype=float) # convert raw data to array
 
-plt.scatter(data[:,6], data[:,8])
-plt.xlabel(headers[6])  # name axis from header
-plt.ylabel(headers[8])  # name axis from header
+plt.scatter(data[:,6], data[:,7])
+plt.xlabel(headers[6])
+plt.ylabel(headers[7])
 plt.show()
